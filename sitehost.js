@@ -45,4 +45,4 @@ app.listen(PORT, () => {
 });
 // To run install first the dependencies 
 // Run in terminal: "npm install express axios" 
-// After Installing run "node "
+// After Installing run "node <filename.js> "
