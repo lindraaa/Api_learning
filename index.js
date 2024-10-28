@@ -9,7 +9,8 @@ app.get("/people/:id", async (req, res) => {
     const response = await axios.get(`https://swapi.dev/api/people/${id}`)
         .then((resp)=>{
             console.log("Success")
-            res.send(resp.data)
+            console.log(resp.data)
+            res.json(resp.data)
         })
         .catch (err => console.log("Failed",err))
     // console.log(response)
